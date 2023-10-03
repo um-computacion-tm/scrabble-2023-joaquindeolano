@@ -109,3 +109,13 @@ class Board:
         else: 
             return simple
 
+def colocarFichasEnTablero(board, startX, startY, direction, word):
+    tablero = board()
+    tablero.initialBoard()
+    tablero.writeInBoard(startX, startY, direction, word)
+    tablero.mostrarTableroActual()
+    return tablero.returnPointsAndMultiplier()
+
+
+puntos = colocarFichasEnTablero(Board, 2, 3, 'H', "EJEMPLO")
+print("Puntos y multiplicador:", puntos)
