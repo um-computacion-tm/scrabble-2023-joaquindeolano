@@ -1,6 +1,6 @@
-from game.board import Board
-from game.player import Player
-from game.models import BagTiles
+from board import Board
+from player import Player
+from models import BagTiles
 
 
 class ScrabbleGame:
